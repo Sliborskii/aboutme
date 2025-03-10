@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexey Sliborsky | Professional Profile</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Navbar */
+    .navbar {
+      transition: background-color 0.3s ease;
+    }
+    .navbar.scrolled {
+      background-color: rgba(0, 0, 0, 0.85) !important;
+    }
+    /* Hero Section */
+    .hero-section {
+      background: url('https://source.unsplash.com/1600x900/?technology') center center/cover no-repeat;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    /* Fade in effect */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-in-out;
+    }
+    .fade-in.appeared {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Skills Section */
+    #skills ul {
+      list-style: none;
+      padding: 0;
+    }
+    #skills li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    #skills li i {
+      color: #0d6efd;
+      margin-right: 10px;
+    }
+    footer {
+      background: #222;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">Alexey Sliborsky</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#articles">Articles</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container text-center hero-content">
+      <h1 class="display-3 fw-bold">Alexey Sliborsky</h1>
+      <p class="lead mb-4">Systems Engineer • Team Leadership • Published Author</p>
+      <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center fade-in">
+        <div class="col-md-6">
+          <!-- Updated profile photo -->
+          <img src="https://media.licdn.com/dms/image/v2/D4D03AQFZyddPV5PsKw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715277479329?e=1747267200&v=beta&t=UVvVsC6hDkJS9IfF1by7vAhcPBtzvFItjQuymuios7g" 
+               alt="Alexey Sliborsky" 
+               class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <h2>About Me</h2>
+          <p>
+            I am Alexey Sliborsky (Aliaksei Sliborski), a systems engineer with experience since 2008. Combining technical expertise with a background in organizational management, I successfully lead teams and deliver complex projects. I actively share my ideas and insights through articles and comments on LinkedIn and Medium.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles Section -->
+  <section id="articles" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 fade-in">Articles & Publications</h2>
+      <div class="row g-4">
+        <!-- Medium Article 1 -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Can ChatGPT Simplify the Life of an Azure DevOps Engineer?</h5>
+              <p class="card-text">Exploring how AI can streamline processes and ease challenges for Azure DevOps professionals.</p>
+              <a href="https://medium.com/@sliborskiy/can-chatgpt-simplify-the-life-of-an-azure-devops-engineer-2d5a18246357" target="_blank" class="mt-auto btn btn-sm btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Medium Article 2 -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Unlocking the Power of Retrieval Augmented Generation (RAG)</h5>
+              <p class="card-text">A deep dive into the potential of RAG in revolutionizing data retrieval and content generation.</p>
+              <a href="https://medium.com/@sliborskiy/unlocking-the-power-of-retrieval-augmented-generation-rag-fe8252b7a53e" target="_blank" class="mt-auto btn btn-sm btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Qulix Article 1 -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">The Era of GPT</h5>
+              <p class="card-text">Insights into the evolution of GPT and its impact on technology and business.</p>
+              <a href="https://www.qulix.com/about/blog/the-era-of-gpt/" target="_blank" class="mt-auto btn btn-sm btn-secondary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Qulix Article 2 -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">What is Copilot AI?</h5>
+              <p class="card-text">An overview of Copilot AI and its role in enhancing productivity in software development.</p>
+              <a href="https://www.qulix.com/about/blog/what-is-copilot-ai/" target="_blank" class="mt-auto btn btn-sm btn-secondary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Qulix Article 3 -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">What is a GPT Assistant?</h5>
+              <p class="card-text">Exploring the concept and applications of GPT assistants in today’s digital landscape.</p>
+              <a href="https://www.qulix.com/about/blog/what-is-a-gpt-assistant/" target="_blank" class="mt-auto btn btn-sm btn-secondary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Qulix Article 4 -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">LLM Agents</h5>
+              <p class="card-text">A discussion on LLM agents and how they are shaping the future of AI-driven solutions.</p>
+              <a href="https://www.qulix.com/about/blog/llm-agents/" target="_blank" class="mt-auto btn btn-sm btn-secondary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Qulix Article 5 -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">RAG LLM</h5>
+              <p class="card-text">Understanding the synergy between Retrieval Augmented Generation and LLMs in modern applications.</p>
+              <a href="https://www.qulix.com/about/blog/rag-llm/" target="_blank" class="mt-auto btn btn-sm btn-secondary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- LinkedIn Article -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">LinkedIn Activity</h5>
+              <p class="card-text">Recent thoughts and insights shared on my LinkedIn profile.</p>
+              <a href="https://www.linkedin.com/posts/alexey-sliborsky_dab-activity-7197143256495771648-NngG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAiGd58BT26DO2gxIZ6PTVgKWLWkWUkdemM" target="_blank" class="mt-auto btn btn-sm btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="https://www.linkedin.com/in/alexey-sliborsky/recent-activity/all/" target="_blank" class="btn btn-outline-primary me-2">View all LinkedIn Posts</a>
+        <a href="https://medium.com/@sliborskiy" target="_blank" class="btn btn-outline-secondary">View all Medium Posts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fade-in">Core Skills</h2>
+      <div class="row">
+        <div class="col-md-12 fade-in">
+          <ul>
+            <li><i class="fas fa-check"></i> Enterprise Architecture, SOA & Microservices, Data Science/Engineering (AI/ML), Cloud Development (MS Azure, AWS, GCP)</li>
+            <li><i class="fas fa-check"></i> .NET/.NET Core, JavaScript/TypeScript, Java, T-SQL/P-SQL</li>
+            <li><i class="fas fa-check"></i> OS Platforms: Mac OS, Unix, MS Windows</li>
+            <li><i class="fas fa-check"></i> Cloud Platforms: MS Azure, AWS, Google Cloud Platform (GCP)</li>
+            <li><i class="fas fa-check"></i> Data Tools: RDBMS (MS SQL Server, MySQL, Oracle); OLAP (ClickHouse, Vertica, AWS Redshift, BigTable/BigQuery); NoSQL (MongoDB, Redis, Aerospike, Elastic Stack)</li>
+            <li><i class="fas fa-check"></i> Data Engineering: Hadoop, HDFS, Apache Spark, HBase, Apache Kafka</li>
+            <li><i class="fas fa-check"></i> AMQP: RabbitMQ, Active MQ, MSMQ</li>
+            <li><i class="fas fa-check"></i> BI: MS Power BI (DAX)</li>
+            <li><i class="fas fa-check"></i> Web Technologies: ASP.NET, ASP.NET Core, JavaScript/TypeScript/jQuery, Node.js, Angular/React, HTML5, XML/XSL/XSLT, CSS/LESS/SASS, Bootstrap</li>
+            <li><i class="fas fa-check"></i> Security Auditing: Kali Linux, OWASP Tools</li>
+            <li><i class="fas fa-check"></i> Other Tools: Kubernetes/Docker, Ansible/Helm, Git/SVN/TFS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4 fade-in">Contact</h2>
+      <p class="fade-in">I look forward to connecting with you!</p>
+      <div class="fade-in">
+        <a href="mailto:your-email@example.com" class="text-white mx-2"><i class="fas fa-envelope fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/alexey-sliborsky/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Alexey Sliborsky. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Animation on scroll -->
+  <script>
+    const fadeElems = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('appeared');
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeElems.forEach(elem => observer.observe(elem));
+
+    // Change navbar background on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
